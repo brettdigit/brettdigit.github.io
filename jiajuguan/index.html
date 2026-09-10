@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家居馆-家居好物选购指南与空间搭配灵感</title>
+<meta name="description" content="家居馆为注重生活品质的家庭提供家具、软装、收纳、照明与厨卫用品的选购思路，涵盖空间搭配灵感、材质对比、尺寸规划与常见问题解答。">
+<meta name="keywords" content="家居馆,家居好物,家具选购,软装搭配,收纳整理,家居照明,厨房卫浴">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#2b2724;
+  --ink-soft:#5f5850;
+  --line:#e6ded4;
+  --bg:#faf7f2;
+  --card:#ffffff;
+  --clay:#a9744f;
+  --clay-dark:#8a5c3b;
+  --sage:#6f7f6a;
+  --sand:#f1e9dd;
+  --radius:14px;
+  --shadow:0 6px 24px rgba(64,48,32,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{width:min(1180px,92%);margin:0 auto;}
+
+/* ---------- 顶部 ---------- */
+.topbar{
+  background:var(--ink);
+  color:#e9e1d6;
+  font-size:13px;
+}
+.topbar .wrap{
+  display:flex;justify-content:space-between;align-items:center;
+  min-height:38px;gap:12px;flex-wrap:wrap;
+}
+.topbar span{opacity:.82;}
+.topbar .tb-links{display:flex;gap:18px;}
+.topbar .tb-links a:hover{color:#fff;}
+
+header.site-head{
+  background:var(--card);
+  border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:50;
+}
+.head-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;min-height:74px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-mark{
+  width:44px;height:44px;border-radius:12px;
+  background:linear-gradient(140deg,var(--clay),#c99a71);
+  display:grid;place-items:center;
+  color:#fff;font-weight:700;font-size:19px;letter-spacing:1px;
+  box-shadow:0 4px 12px rgba(169,116,79,.35);
+}
+.brand-text b{display:block;font-size:20px;letter-spacing:2px;}
+.brand-text small{display:block;color:var(--ink-soft);font-size:12px;letter-spacing:1px;}
+
+nav.main-nav ul{
+  list-style:none;display:flex;gap:6px;flex-wrap:wrap;
+}
+nav.main-nav a{
+  display:block;padding:8px 15px;border-radius:999px;
+  font-size:15px;color:var(--ink-soft);transition:.2s;
+}
+nav.main-nav a:hover,nav.main-nav a.active{
+  background:var(--sand);color:var(--clay-dark);
+}
+.head-cta{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--clay);color:#fff;font-size:14px;
+  padding:10px 20px;border-radius:999px;transition:.2s;
+  white-space:nowrap;
+}
+.head-cta:hover{background:var(--clay-dark);}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  background:
+    radial-gradient(900px 380px at 88% -10%,rgba(169,116,79,.16),transparent 70%),
+    linear-gradient(180deg,#fdfbf7,#f6f1e8);
+  border-bottom:1px solid var(--line);
+  padding:56px 0 48px;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;
+}
+.hero-tag{
+  display:inline-block;font-size:13px;letter-spacing:2px;
+  color:var(--clay-dark);background:#fff;
+  border:1px solid var(--line);border-radius:999px;
+  padding:5px 14px;margin-bottom:18px;
+}
+.hero h1{
+  font-size:clamp(26px,3.4vw,40px);
+  line-height:1.35;letter-spacing:1px;margin-bottom:16px;
+}
+.hero h1 em{font-style:normal;color:var(--clay-dark);}
+.hero p.lead{
+  color:var(--ink-soft);font-size:16.5px;max-width:56ch;margin-bottom:26px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:999px;
+  font-size:15px;transition:.2s;border:1px solid transparent;
+}
+.btn-primary{background:var(--clay);color:#fff;}
+.btn-primary:hover{background:var(--clay-dark);transform:translateY(-1px);}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--ink);}
+.btn-ghost:hover{border-color:var(--clay);color:var(--clay-dark);}
+
+.hero-points{
+  margin-top:30px;display:flex;gap:26px;flex-wrap:wrap;
+  font-size:14px;color:var(--ink-soft);
+}
+.hero-points li{list-style:none;display:flex;align-items:center;gap:8px;}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--sage);display:inline-block;}
+
+.hero-panel{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:20px;padding:26px;box-shadow:var(--shadow);
+}
+.hero-panel h2{
+  font-size:16px;letter-spacing:1px;margin-bottom:16px;
+  padding-bottom:12px;border-bottom:1px dashed var(--line);color:var(--clay-dark);
+}
+.room-list{list-style:none;display:grid;gap:12px;}
+.room-list li{
+  display:flex;justify-content:space-between;align-items:center;
+  background:var(--sand);border-radius:10px;padding:11px 15px;font-size:14.5px;
+}
+.room-list li span.k{color:var(--ink-soft);font-size:13px;}
+
+/* ---------- 通用区块 ---------- */
+section{padding:60px 0;}
+.sec-head{margin-bottom:34px;max-width:70ch;}
+.sec-head .eyebrow{
+  font-size:13px;letter-spacing:3px;color:var(--clay);text-transform:uppercase;
+  display:block;margin-bottom:8px;
+}
+.sec-head h2{
+  font-size:clamp(21px,2.4vw,28px);letter-spacing:1px;margin-bottom:10px;
+}
+.sec-head p{color:var(--ink-soft);font-size:15.5px;}
+
+/* 分类导航 */
+.cat-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;
+}
+.cat-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 20px;transition:.22s;
+}
+.cat-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#dccdb9;}
+.cat-card .ico{
+  width:40px;height:40px;border-radius:10px;background:var(--sand);
+  display:grid;place-items:center;font-size:18px;margin-bottom:14px;
+}
+.cat-card h3{font-size:16.5px;margin-bottom:8px;}
+.cat-card p{font-size:14px;color:var(--ink-soft);}
+
+/* 选购要点 */
+.pick{
+  background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.pick-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
+.pick-item{
+  border-left:3px solid var(--clay);padding:4px 0 4px 18px;
+}
+.pick-item h3{font-size:16.5px;margin-bottom:8px;}
+.pick-item p{font-size:14.5px;color:var(--ink-soft);}
+
+/* 空间方案 */
+.space-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;
+}
+.space-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.22s;
+}
+.space-card:hover{box-shadow:var(--shadow);}
+.space-thumb{
+  height:132px;display:grid;place-items:center;font-size:15px;letter-spacing:2px;
+  color:#fff;font-weight:600;
+}
+.t1{background:linear-gradient(135deg,#b98a63,#8a5c3b);}
+.t2{background:linear-gradient(135deg,#7f8f79,#5c6b58);}
+.t3{background:linear-gradient(135deg,#9a8f83,#6f665c);}
+.t4{background:linear-gradient(135deg,#c2a37c,#a07f52);}
+.space-body{padding:20px;flex:1;display:flex;flex-direction:column;}
+.space-body h3{font-size:17px;margin-bottom:10px;}
+.space-body p{font-size:14.5px;color:var(--ink-soft);flex:1;}
+.space-meta{
+  margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);
+  font-size:13px;color:var(--clay-dark);display:flex;gap:14px;flex-wrap:wrap;
+}
+
+/* 材质对比表 */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff;}
+table{width:100%;border-collapse:collapse;min-width:620px;font-size:14.5px;}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);}
+th{background:var(--sand);font-weight:600;color:var(--ink);white-space:nowrap;}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover{background:#fdfaf6;}
+td strong{color:var(--clay-dark);}
+
+/* 流程 */
+.steps{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;
+  counter-reset:step;
+}
+.step{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 20px;position:relative;
+}
+.step::before{
+  counter-increment:step;content:counter(step,decimal-leading-zero);
+  font-size:26px;font-weight:700;color:#e3d5c3;display:block;margin-bottom:10px;
+  letter-spacing:1px;
+}
+.step h3{font-size:16px;margin-bottom:8px;}
+.step p{font-size:14px;color:var(--ink-soft);}
+
+/* 侧栏+问答 */
+.faq-layout{display:grid;grid-template-columns:1fr 300px;gap:34px;align-items:start;}
+.faq-list{display:grid;gap:14px;}
+details{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:16px 20px;transition:.2s;
+}
+details[open]{border-color:#dccdb9;box-shadow:var(--shadow);}
+summary{
+  cursor:pointer;font-weight:600;font-size:15.5px;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{
+  content:"+";color:var(--clay);font-size:20px;font-weight:400;line-height:1;
+}
+details[open] summary::after{content:"–";}
+details p{margin-top:12px;font-size:14.5px;color:var(--ink-soft);}
+
+aside.side{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;box-shadow:var(--shadow);
+}
+aside.side h3{font-size:16px;margin-bottom:14px;color:var(--clay-dark);letter-spacing:1px;}
+aside.side ul{list-style:none;display:grid;gap:11px;font-size:14.5px;color:var(--ink-soft);}
+aside.side li{padding-left:16px;position:relative;}
+aside.side li::before{
+  content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;
+  border-radius:50%;background:var(--sage);
+}
+.side-note{
+  margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);
+  font-size:13px;color:var(--ink-soft);line-height:1.7;
+}
+
+/* 服务承诺 */
+.assure{background:var(--sand);}
+.assure-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;}
+.assure-item{
+  background:#fff;border-radius:var(--radius);padding:22px 20px;border:1px solid #e8ddcd;
+}
+.assure-item h3{font-size:15.5px;margin-bottom:8px;color:var(--clay-dark);}
+.assure-item p{font-size:14px;color:var(--ink-soft);}
+
+/* 页脚 */
+footer.site-foot{
+  background:var(--ink);color:#c9c0b5;padding:48px 0 24px;font-size:14px;
+}
+.foot-grid{
+  display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px;
+  padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.12);
+}
+.foot-brand b{color:#fff;font-size:18px;letter-spacing:2px;display:block;margin-bottom:12px;}
+.foot-brand p{font-size:13.5px;line-height:1.8;max-width:34ch;opacity:.85;}
+.foot-col h4{color:#fff;font-size:14.5px;margin-bottom:14px;letter-spacing:1px;}
+.foot-col ul{list-style:none;display:grid;gap:9px;font-size:13.5px;}
+.foot-col a:hover{color:#fff;}
+.foot-bottom{
+  padding-top:20px;display:flex;justify-content:space-between;gap:14px;
+  flex-wrap:wrap;font-size:13px;opacity:.75;
+}
+
+/* 响应式 */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:32px;}
+  .faq-layout{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  section{padding:44px 0;}
+  .hero{padding:40px 0 36px;}
+  .head-inner{min-height:auto;padding:14px 0;}
+  nav.main-nav ul{justify-content:flex-start;}
+  .head-cta{display:none;}
+  .foot-grid{grid-template-columns:1fr;gap:24px;}
+  .hero-points{gap:14px;}
+  th,td{padding:12px 14px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>家居馆 · 帮你在预算内把家布置得更耐看、更好用</span>
+    <div class="tb-links">
+      <a href="#guide">选购指南</a>
+      <a href="#space">空间方案</a>
+      <a href="#faq">常见问题</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <div class="brand">
+      <div class="brand-mark">家</div>
+      <div class="brand-text">
+        <b>家居馆</b>
+        <small>家具 · 软装 · 收纳 · 照明</small>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a class="active" href="#top">首页</a></li>
+        <li><a href="#category">品类导航</a></li>
+        <li><a href="#guide">选购要点</a></li>
+        <li><a href="#space">空间方案</a></li>
+        <li><a href="#material">材质对比</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <a class="head-cta" href="#guide">开始逛馆</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-tag">家居馆 · 生活空间选品参考</span>
+        <h1>家居馆：把家具、软装与收纳<em>选对、摆好、用久</em></h1>
+        <p class="lead">
+          布置一个家，难点往往不是“买什么”，而是先弄清楚空间尺寸、使用习惯和预算顺序。
+          家居馆按客厅、卧室、餐厅、书房、厨卫等真实场景整理选品思路，帮助你在下单前把关键问题想明白。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#category">按品类浏览</a>
+          <a class="btn btn-ghost" href="#guide">看选购要点</a>
+        </div>
+        <ul class="hero-points">
+          <li><span class="dot"></span>先量尺寸，再定风格</li>
+          <li><span class="dot"></span>先定大件，再补小件</li>
+          <li><span class="dot"></span>材质与清洁方式一起考虑</li>
+        </ul>
+      </div>
+
+      <aside class="hero-panel">
+        <h2>逛馆前先确认这五件事</h2>
+        <ul class="room-list">
+          <li><span>空间净尺寸（长×宽×高）</span><span class="k">必做</span></li>
+          <li><span>门洞、电梯、楼道可通过宽度</span><span class="k">必做</span></li>
+          <li><span>主要使用者与使用频率</span><span class="k">建议</span></li>
+          <li><span>是否养宠、是否有小孩</span><span class="k">建议</span></li>
+          <li><span>可接受的清洁与保养投入</span><span class="k">建议</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 品类导航 -->
+  <section id="category">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Category</span>
+        <h2>家居馆品类导航</h2>
+        <p>不同品类的决策逻辑差别很大：大件看结构与尺寸，软装看色彩与手感，收纳看动线与容量。按下面的分类进入，能少走很多弯路。</p>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <div class="ico">🛋️</div>
+          <h3>客厅家具</h3>
+          <p>沙发、茶几、电视柜、边几。重点看坐深、坐高、扶手宽度与客厅通行余量。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ico">🛏️</div>
+          <h3>卧室家具</h3>
+          <p>床架、床垫、床头柜、衣柜。先确认床垫尺寸，再决定床架内径与过道宽度。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ico">🍽️</div>
+          <h3>餐厅与厨房</h3>
+          <p>餐桌椅、餐边柜、厨具收纳。关注用餐人数变化与桌面日常清洁难度。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ico">📚</div>
+          <h3>书房与办公</h3>
+          <p>书桌、座椅、书架、台灯。桌面高度与坐姿支撑比外观更影响长期使用。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ico">🧺</div>
+          <h3>收纳整理</h3>
+          <p>衣柜内部件、抽屉分隔、墙面挂钩、储物箱。按物品数量规划，而不是按柜子数量。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ico">💡</div>
+          <h3>照明灯具</h3>
+          <p>主灯、筒射灯、落地灯、氛围灯带。分层次布光比单纯提高亮度更舒适。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ico">🧵</div>
+          <h3>软装布艺</h3>
+          <p>窗帘、地毯、抱枕、床品。颜色与材质决定空间的整体温度感。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ico">🚿</div>
+          <h3>厨卫与日用</h3>
+          <p>毛巾、置物架、浴室收纳、清洁工具。优先考虑防潮与易打理。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 选购要点 -->
+  <section class="pick" id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Buying Guide</span>
+        <h2>家居选购的六个关键判断</h2>
+        <p>下面这些判断标准不针对某个品牌，而是通用的挑选逻辑，适用于大多数家居品类。</p>
+      </div>
+      <div class="pick-grid">
+        <div class="pick-item">
+          <h3>一、尺寸优先于风格</h3>
+          <p>先量净尺寸并预留通行与开门空间，再挑款式。尺寸不合的家具，再好看也会变成负担。</p>
+        </div>
+        <div class="pick-item">
+          <h3>二、先定大件再补小件</h3>
+          <p>沙发、床、餐桌等大件确定后，配色与配件才有参照系，避免反复更换造成浪费。</p>
+        </div>
+        <div class="pick-item">
+          <h3>三、看清材质与工艺说明</h3>
+          <p>关注基材、饰面、封边与五金。实木、板材、金属各有适用场景，没有绝对优劣。</p>
+        </div>
+        <div class="pick-item">
+          <h3>四、把清洁成本算进去</h3>
+          <p>浅色布艺、开放格、复杂雕花都意味着更多日常维护，选择前先评估自己的习惯。</p>
+        </div>
+        <div class="pick-item">
+          <h3>五、关注安全与环保信息</h3>
+          <p>优先选择能提供明确材质说明与检测信息的产品，新家具到家后保持通风。</p>
+        </div>
+        <div class="pick-item">
+          <h3>六、预留调整余地</h3>
+          <p>家会随生活变化，选择可拆洗、可组合、可扩展的款式，后期调整更从容。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 空间方案 -->
+  <section id="space">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Space Plan</span>
+        <h2>按空间整理的搭配思路</h2>
+        <p>同一件家具放在不同空间，效果可能完全不同。以下按常见户型场景给出搭配方向，可按自家情况取舍。</p>
+      </div>
+      <div class="space-grid">
+        <article class="space-card">
+          <div class="space-thumb t1">客厅</div>
+          <div class="space-body">
+            <h3>客厅：留出通行动线</h3>
+            <p>沙发与茶几之间建议保留可正常走动的距离，电视柜深度不宜过深。小客厅可用边几替代大茶几，视觉上更轻。</p>
+            <div class="space-meta"><span>沙发</span><span>茶几</span><span>电视柜</span><span>地毯</span></div>
+          </div>
+        </article>
+        <article class="space-card">
+          <div class="space-thumb t2">卧室</div>
+          <div class="space-body">
+            <h3>卧室：以睡眠体验为核心</h3>
+            <p>床两侧尽量留出上下床空间，衣柜开门方向避免与床冲突。遮光窗帘与柔和夜灯对睡眠帮助明显。</p>
+            <div class="space-meta"><span>床架</span><span>床垫</span><span>衣柜</span><span>窗帘</span></div>
+          </div>
+        </article>
+        <article class="space-card">
+          <div class="space-thumb t3">餐厨</div>
+          <div class="space-body">
+            <h3>餐厨：围绕操作动线布置</h3>
+            <p>餐桌与墙面之间预留拉开椅子的空间；厨房收纳按“洗、切、炒”顺序就近安排，取放更顺手。</p>
+            <div class="space-meta"><span>餐桌椅</span><span>餐边柜</span><span>收纳架</span></div>
+          </div>
+        </article>
+        <article class="space-card">
+          <div class="space-thumb t4">书房</div>
+          <div class="space-body">
+            <h3>书房：桌面高度与光线并重</h3>
+            <p>桌面高度与座椅高度需匹配，避免久坐肩颈不适。主照明与局部台灯搭配，减少屏幕反光。</p>
+            <div class="space-meta"><span>书桌</span><span>座椅</span><span>书架</span><span>台灯</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 材质对比 -->
+  <section id="material">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Material</span>
+        <h2>常见家具材质横向对比</h2>
+        <p>材质没有绝对好坏，只有是否匹配你的预算、使用强度与打理习惯。下表为一般性参考。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>材质类型</th>
+              <th>常见特点</th>
+              <th>适合场景</th>
+              <th>日常打理</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>实木</strong></td>
+              <td>纹理自然，质感扎实，重量较大</td>
+              <td>餐桌、床架、书桌</td>
+              <td>避免长期潮湿与暴晒，定期擦拭</td>
+            </tr>
+            <tr>
+              <td><strong>人造板材</strong></td>
+              <td>造型灵活，价格区间宽，需关注封边</td>
+              <td>衣柜、电视柜、储物柜</td>
+              <td>干布擦拭，避免大量积水</td>
+            </tr>
+            <tr>
+              <td><strong>金属</strong></td>
+              <td>结构稳定，线条简洁，触感偏冷</td>
+              <td>椅架、置物架、灯具</td>
+              <td>防锈处理，避免硬物刮擦</td>
+            </tr>
+            <tr>
+              <td><strong>布艺</strong></td>
+              <td>亲肤柔软，色彩选择多，易吸附灰尘</td>
+              <td>沙发、床品、窗帘</td>
+              <td>优先选可拆洗款，定期吸尘</td>
+            </tr>
+            <tr>
+              <td><strong>皮革</strong></td>
+              <td>触感细腻，整体感强，需注意保养</td>
+              <td>沙发、座椅</td>
+              <td>避免暴晒，定期用专用护理品</td>
+            </tr>
+            <tr>
+              <td><strong>玻璃与石材</strong></td>
+              <td>表面平整，便于清洁，较重</td>
+              <td>茶几、餐桌台面</td>
+              <td>注意防磕碰，及时擦干水渍</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 流程 -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Process</span>
+        <h2>从想法到落地的一般流程</h2>
+        <p>按顺序推进，可以减少返工和临时加购带来的额外支出。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>梳理需求</h3>
+          <p>列出每个空间的主要用途、常住人数与需要收纳的物品类型。</p>
+        </div>
+        <div class="step">
+          <h3>测量与记录</h3>
+          <p>记录净尺寸、门窗位置、插座高度与可通行宽度，形成简单平面草图。</p>
+        </div>
+        <div class="step">
+          <h3>确定顺序</h3>
+          <p>先大件后小件，先固定家具后活动家具，避免风格反复调整。</p>
+        </div>
+        <div class="step">
+          <h3>核对与验收</h3>
+          <p>到货后核对尺寸、配件与外观，确认安装稳固后再处理包装材料。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服务承诺 -->
+  <section class="assure">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Service</span>
+        <h2>家居馆的内容原则</h2>
+        <p>我们更愿意提供可自行判断的标准，而不是替你下结论。</p>
+      </div>
+      <div class="assure-grid">
+        <div class="assure-item">
+          <h3>不夸大效果</h3>
+          <p>只描述材质与结构的一般特性，不使用无法验证的绝对化说法。</p>
+        </div>
+        <div class="assure-item">
+          <h3>不虚构数据</h3>
+          <p>涉及尺寸、价格与参数时，以实际商品标注与官方信息为准。</p>
+        </div>
+        <div class="assure-item">
+          <h3>重视安全提示</h3>
+          <p>对安装、承重、用电与环保相关事项，给出必要的提醒与注意事项。</p>
+        </div>
+        <div class="assure-item">
+          <h3>持续更新</h3>
+          <p>根据用户反馈补充常见问题与搭配思路，让内容更贴近真实使用。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>家居选购常见问题</h2>
+        <p>整理了几个在挑选家具与软装时最常被问到的问题，供参考。</p>
+      </div>
+
+      <div class="faq-layout">
+        <div class="faq-list">
+          <details open>
+            <summary>小户型应该先买什么家具？</summary>
+            <p>通常建议先确定使用频率最高、最难更换的大件，例如床与沙发。它们决定了空间的整体尺寸关系，之后再补充茶几、边柜等可调整的家具。优先选择带收纳功能或多用途的款式，能在有限面积里提升利用率。</p>
+          </details>
+          <details>
+            <summary>网上买家具需要注意哪些事项？</summary>
+            <p>重点确认三件事：一是尺寸是否包含误差范围，二是安装方式与配件是否齐全，三是退换条件与运输责任划分。收到货后先检查外观与结构，再决定是否安装，避免影响后续处理。</p>
+          </details>
+          <details>
+            <summary>新家具到家后需要通风多久？</summary>
+            <p>不同材质的散味速度不同，没有统一标准。一般建议保持较长时间的开窗通风，并适当提高室内温度与空气流通效率。如果对气味比较敏感，可以延长通风周期后再正常使用。</p>
+          </details>
+          <details>
+            <summary>布艺沙发和皮沙发怎么选？</summary>
+            <p>布艺触感温和、颜色选择多，但需要定期吸尘，建议选可拆洗款；皮革整体感强、日常擦拭方便，但需注意避免暴晒与划伤。可以结合家中是否有宠物、小孩以及清洁习惯来决定。</p>
+          </details>
+          <details>
+            <summary>收纳应该按空间还是按物品规划？</summary>
+            <p>更推荐按物品规划。先统计衣物、书籍、杂物的大致数量与使用频率，再决定柜体内部结构与分隔方式，这样能避免出现“柜子很多但依然放不下”的情况。</p>
+          </details>
+          <details>
+            <summary>照明只装一盏主灯可以吗？</summary>
+            <p>可以，但使用体验通常不如分层布光。主灯负责整体亮度，局部照明用于阅读、用餐或氛围营造。若条件允许，可在常用区域增加台灯或壁灯，减少单一光源带来的阴影与刺眼感。</p>
+          </details>
+        </div>
+
+        <aside class="side">
+          <h3>选购前检查清单</h3>
+          <ul>
+            <li>净尺寸与通行宽度是否已测量</li>
+            <li>门洞、电梯能否顺利搬运</li>
+            <li>材质说明与环保信息是否清楚</li>
+            <li>是否方便拆洗或日常清洁</li>
+            <li>安装方式与配件是否齐全</li>
+            <li>退换与运输责任是否明确</li>
+          </ul>
+          <p class="side-note">
+            提示：家居产品的实际体验与户型、采光、使用习惯密切相关，建议结合自家情况综合判断，不必完全照搬他人方案。
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <b>家居馆</b>
+        <p>围绕家具、软装、收纳与照明，整理可自行判断的选购思路与空间搭配参考，帮助你把家布置得更好用。</p>
+      </div>
+      <div class="foot-col">
+        <h4>品类</h4>
+        <ul>
+          <li><a href="#category">客厅家具</a></li>
+          <li><a href="#category">卧室家具</a></li>
+          <li><a href="#category">餐厨用品</a></li>
+          <li><a href="#category">收纳整理</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>指南</h4>
+        <ul>
+          <li><a href="#guide">选购要点</a></li>
+          <li><a href="#space">空间方案</a></li>
+          <li><a href="#material">材质对比</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#top">内容原则</a></li>
+          <li><a href="#top">更新说明</a></li>
+          <li><a href="#top">使用条款</a></li>
+          <li><a href="#top">联系反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>家居馆 · 家居选购与空间搭配参考</span>
+      <span>内容仅供参考，请以实际商品信息与官方说明为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = document.querySelectorAll('nav.main-nav a[href^="#"]');
+  links.forEach(function(link){
+    link.addEventListener('click', function(){
+      links.forEach(function(l){ l.classList.remove('active'); });
+      link.classList.add('active');
+    });
+  });
+})();
+</script>
+
+</body>
+  </html>
