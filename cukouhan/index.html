@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>粗口喊麦词-喊麦歌词文本、节奏结构与创作表达参考</title>
+<meta name="description" content="粗口喊麦词相关资料页，整理喊麦歌词的常见结构、节奏特点、表达方式与创作注意事项，帮助理解这类文本的风格与使用边界。">
+<meta name="keywords" content="粗口喊麦词,喊麦歌词,喊麦词结构,喊麦节奏,喊麦创作,喊麦文本">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  background: #0f0d16;
+  color: #e8e4f0;
+  line-height: 1.75;
+  font-size: 16px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul, ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 顶部公告 */
+.topbar {
+  background: linear-gradient(90deg, #2a1b3d, #3d1f2e);
+  color: #d8c9e8;
+  font-size: 13px;
+  text-align: center;
+  padding: 8px 16px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #3a2a4d;
+}
+
+/* 页眉 */
+.site-header {
+  background: #161225;
+  border-bottom: 1px solid #2c2340;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 0;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff4d6d, #7b2ff7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  flex-shrink: 0;
+}
+.logo-text b {
+  display: block;
+  font-size: 19px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.logo-text span {
+  display: block;
+  font-size: 12px;
+  color: #9b8fb5;
+  letter-spacing: 0.5px;
+}
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.main-nav a {
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #c8bede;
+  transition: background 0.2s, color 0.2s;
+}
+.main-nav a:hover,
+.main-nav a.active {
+  background: #2c2142;
+  color: #fff;
+}
+
+/* 首屏 */
+.hero {
+  padding: 56px 0 44px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 77, 109, 0.18), transparent 42%),
+    radial-gradient(circle at 88% 10%, rgba(123, 47, 247, 0.22), transparent 46%),
+    #0f0d16;
+  border-bottom: 1px solid #241c36;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 38px;
+  line-height: 1.35;
+  color: #fff;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(90deg, #ff4d6d, #b06bff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero p {
+  color: #b6aacd;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.btn {
+  display: inline-block;
+  padding: 11px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+}
+.btn-primary {
+  background: linear-gradient(90deg, #ff4d6d, #7b2ff7);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(123, 47, 247, 0.35);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(255, 77, 109, 0.35);
+}
+.btn-ghost {
+  border: 1px solid #4a3a68;
+  color: #d6cbea;
+}
+.btn-ghost:hover {
+  background: #241c36;
+  color: #fff;
+}
+.hero-panel {
+  background: #17122a;
+  border: 1px solid #2e2445;
+  border-radius: 16px;
+  padding: 24px;
+}
+.hero-panel h3 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 16px;
+  padding-left: 10px;
+  border-left: 3px solid #ff4d6d;
+}
+.beat-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #2c2340;
+  font-size: 14px;
+  color: #b6aacd;
+}
+.beat-list li:last-child {
+  border-bottom: none;
+}
+.beat-list b {
+  color: #ffd166;
+  font-weight: 600;
+}
+
+/* 通用区块 */
+.section {
+  padding: 52px 0;
+}
+.section-alt {
+  background: #130f20;
+  border-top: 1px solid #221a33;
+  border-bottom: 1px solid #221a33;
+}
+.section-head {
+  margin-bottom: 30px;
+}
+.section-head h2 {
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+.section-head h2 span {
+  color: #ff4d6d;
+}
+.section-head p {
+  color: #9b8fb5;
+  font-size: 15px;
+}
+
+/* 结构卡片 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #191330;
+  border: 1px solid #2c2340;
+  border-radius: 14px;
+  padding: 22px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: #5b3fa0;
+  transform: translateY(-3px);
+}
+.card .tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(255, 77, 109, 0.15);
+  color: #ff8fa3;
+  margin-bottom: 12px;
+}
+.card h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 14px;
+  color: #a99cc4;
+}
+
+/* 歌词示例 */
+.lyric-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.lyric-item {
+  background: #17122a;
+  border: 1px solid #2c2340;
+  border-left: 4px solid #7b2ff7;
+  border-radius: 12px;
+  padding: 20px 22px;
+}
+.lyric-item h3 {
+  font-size: 16px;
+  color: #ffd166;
+  margin-bottom: 12px;
+}
+.lyric-item pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: inherit;
+  font-size: 14px;
+  color: #c8bede;
+  line-height: 2;
+}
+.lyric-item .note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #8b7ea8;
+  border-top: 1px dashed #2c2340;
+  padding-top: 10px;
+}
+
+/* 节奏表格 */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid #2c2340;
+  border-radius: 12px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+  font-size: 14px;
+}
+thead th {
+  background: #1f1836;
+  color: #fff;
+  text-align: left;
+  padding: 14px 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #33284d;
+}
+tbody td {
+  padding: 13px 16px;
+  color: #b6aacd;
+  border-bottom: 1px solid #241c36;
+}
+tbody tr:last-child td {
+  border-bottom: none;
+}
+tbody tr:hover td {
+  background: #1b1530;
+}
+td strong {
+  color: #ff8fa3;
+  font-weight: 600;
+}
+
+/* 创作建议 */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+.tip {
+  display: flex;
+  gap: 14px;
+  background: #191330;
+  border: 1px solid #2c2340;
+  border-radius: 12px;
+  padding: 18px;
+}
+.tip-num {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #ff4d6d, #7b2ff7);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tip h3 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.tip p {
+  font-size: 14px;
+  color: #a99cc4;
+}
+
+/* 侧栏与正文两列 */
+.split {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 34px;
+  align-items: start;
+}
+.article-body h2 {
+  font-size: 22px;
+  color: #fff;
+  margin: 26px 0 12px;
+  padding-left: 12px;
+  border-left: 4px solid #ff4d6d;
+}
+.article-body h2:first-child {
+  margin-top: 0;
+}
+.article-body p {
+  font-size: 15px;
+  color: #b6aacd;
+  margin-bottom: 14px;
+}
+.article-body ul {
+  margin: 0 0 16px 4px;
+}
+.article-body ul li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 15px;
+  color: #b6aacd;
+  margin-bottom: 8px;
+}
+.article-body ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7b2ff7;
+}
+
+/* 侧栏 */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.side-card {
+  background: #17122a;
+  border: 1px solid #2c2340;
+  border-radius: 14px;
+  padding: 20px;
+}
+.side-card h3 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2c2340;
+}
+.side-card ol {
+  counter-reset: rank;
+}
+.side-card ol li {
+  counter-increment: rank;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 9px 0;
+  font-size: 14px;
+  color: #b6aacd;
+  border-bottom: 1px dashed #241c36;
+}
+.side-card ol li:last-child {
+  border-bottom: none;
+}
+.side-card ol li::before {
+  content: counter(rank);
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: #2c2142;
+  color: #ff8fa3;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-card .plain-list li {
+  font-size: 14px;
+  color: #b6aacd;
+  padding: 8px 0;
+  border-bottom: 1px dashed #241c36;
+}
+.side-card .plain-list li:last-child {
+  border-bottom: none;
+}
+
+/* FAQ */
+.faq-item {
+  background: #191330;
+  border: 1px solid #2c2340;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.faq-q {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+  padding: 18px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+.faq-q:hover {
+  background: #1e1735;
+}
+.faq-q .arrow {
+  color: #ff4d6d;
+  font-size: 18px;
+  transition: transform 0.25s;
+  flex-shrink: 0;
+}
+.faq-item.open .faq-q .arrow {
+  transform: rotate(45deg);
+}
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq-a p {
+  padding: 0 20px 18px;
+  font-size: 14px;
+  color: #a99cc4;
+}
+.faq-item.open .faq-a {
+  max-height: 400px;
+}
+
+/* 提示条 */
+.notice {
+  background: rgba(255, 77, 109, 0.08);
+  border: 1px solid rgba(255, 77, 109, 0.3);
+  border-radius: 12px;
+  padding: 18px 22px;
+  font-size: 14px;
+  color: #e0b9c4;
+}
+.notice b {
+  color: #ff8fa3;
+}
+
+/* 页脚 */
+.site-footer {
+  background: #0b0913;
+  border-top: 1px solid #221a33;
+  padding: 40px 0 26px;
+  margin-top: 10px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 26px;
+}
+.footer-grid h4 {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer-grid p,
+.footer-grid li {
+  font-size: 13px;
+  color: #8b7ea8;
+  margin-bottom: 7px;
+}
+.footer-bottom {
+  border-top: 1px solid #221a33;
+  padding-top: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #6f6488;
+}
+
+/* 响应式 */
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .split {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+  .hero {
+    padding: 38px 0 32px;
+  }
+  .hero h1 {
+    font-size: 27px;
+  }
+  .section {
+    padding: 38px 0;
+  }
+  .section-head h2 {
+    font-size: 21px;
+  }
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav a {
+    padding: 6px 11px;
+    font-size: 14px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">喊麦文本资料整理 · 内容仅供创作参考 · 请遵守平台规范与公序良俗</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <div class="logo-mark">喊</div>
+      <div class="logo-text">
+        <b>喊麦词库</b>
+        <span>节奏文本 · 结构拆解 · 创作参考</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#intro" class="active">概念入门</a>
+      <a href="#structure">结构拆解</a>
+      <a href="#lyric">文本示例</a>
+      <a href="#rhythm">节奏对照</a>
+      <a href="#tips">创作建议</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero" id="intro">
+    <div class="container hero-grid">
+      <div>
+        <h1>粗口喊麦词：理解<em>喊麦文本</em>的节奏、结构与表达边界</h1>
+        <p>“粗口喊麦词”通常指喊麦作品中带有较强情绪色彩、口语化甚至粗俗用语的一类歌词文本。它并不是一个独立的艺术门类，而是喊麦这种伴随强节奏口头表达形式中的一种风格取向。</p>
+        <p>本页不提供可直接套用的成品歌词，而是从文本结构、押韵方式、节奏配合和平台规范几个角度，帮助读者理解这类内容是怎么构成的、适合在什么场景使用、以及创作时需要注意哪些问题。</p>
+        <div class="hero-actions">
+          <a href="#structure" class="btn btn-primary">查看结构拆解</a>
+          <a href="#tips" class="btn btn-ghost">创作注意事项</a>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <h3>喊麦文本的基本构成</h3>
+        <ul class="beat-list">
+          <li><span>开场铺垫</span><b>2–4 句</b></li>
+          <li><span>主歌循环</span><b>4–8 句 / 段</b></li>
+          <li><span>情绪递进段</span><b>4 句左右</b></li>
+          <li><span>重复副歌</span><b>可多次</b></li>
+          <li><span>收尾落点</span><b>1–2 句</b></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 概念说明 -->
+  <section class="section" id="concept">
+    <div class="container">
+      <div class="section-head">
+        <h2>先弄清楚：<span>粗口喊麦词</span>到底指什么</h2>
+        <p>把概念拆开，比直接模仿成品更有用。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">喊麦</span>
+          <h3>一种强节奏的口头表达</h3>
+          <p>喊麦以稳定的节拍为基础，靠短句、停顿和重音推进，介于说唱、朗诵和口号之间。它对音准要求不高，但对节奏感和咬字清晰度要求较高。</p>
+        </article>
+        <article class="card">
+          <span class="tag">粗口</span>
+          <h3>情绪强度较高的用语倾向</h3>
+          <p>所谓“粗口”，多指用词直白、语气冲、带有宣泄感，并非必须包含脏字。很多作品用夸张比喻和强势语气，同样能达到类似的情绪效果。</p>
+        </article>
+        <article class="card">
+          <span class="tag">文本</span>
+          <h3>为节奏服务的歌词</h3>
+          <p>喊麦词更看重句长整齐、尾字押韵和换气位置，而不是复杂的意象。写的时候要按“拍”来安排字数，而不是按书面语的习惯断句。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 结构拆解 -->
+  <section class="section section-alt" id="structure">
+    <div class="container">
+      <div class="section-head">
+        <h2>结构拆解：<span>一段喊麦词</span>是怎么搭起来的</h2>
+        <p>把整段拆成几个功能块，写起来会清晰很多。</p>
+      </div>
+      <div class="split">
+        <div class="article-body">
+          <h2>开场：定调与抓注意力</h2>
+          <p>开场一般两到四句，作用是交代主题、设定情绪和进入节奏。常见做法是用一个短促有力的判断句起头，再接一句铺垫，让听众在两三秒内知道这段要讲什么。</p>
+          <ul>
+            <li>句长控制在 7–9 字，方便跟拍</li>
+            <li>首句重音落在第二或第三字上更抓耳</li>
+            <li>避免一上来就堆砌形容词</li>
+          </ul>
+
+          <h2>主歌：循环推进的核心</h2>
+          <p>主歌是喊麦词的主体，通常四到八句为一组，配合同一段伴奏循环。每句字数尽量接近，尾字保持同韵或近韵，这样念出来才会“顺”。</p>
+          <p>如果一句太长，可以拆成两个半句，中间留一个短停顿，既方便换气，也能形成节奏上的顿挫感。</p>
+
+          <h2>情绪段：把力度推上去</h2>
+          <p>在循环几遍之后，加入一段语气更强、字数更密的内容，制造起伏。这一段可以适当加快语速，但要注意咬字，否则容易糊成一片。</p>
+
+          <h2>收尾：给一个明确的落点</h2>
+          <p>结尾通常用一两句总结性的话收住，或者把主歌的最后一句重复一遍。落点要干脆，不要拖泥带水，否则整段的节奏感会被削弱。</p>
+        </div>
+        <aside class="sidebar">
+          <div class="side-card">
+            <h3>常见句长参考</h3>
+            <ol>
+              <li>短句：5–7 字，用于开场和重音</li>
+              <li>中句：7–9 字，主歌最常用</li>
+              <li>长句：10–12 字，用于情绪段</li>
+              <li>半句：3–4 字，用于停顿和衔接</li>
+            </ol>
+          </div>
+          <div class="side-card">
+            <h3>押韵小提示</h3>
+            <ul class="plain-list">
+              <li>优先押韵母相近的字，不必强求完全同韵</li>
+              <li>一段内保持同一韵脚，换段再换韵</li>
+              <li>避免为了押韵硬凑词，读起来别扭就换</li>
+              <li>重音字尽量放在句尾，配合鼓点更明显</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 文本示例 -->
+  <section class="section" id="lyric">
+    <div class="container">
+      <div class="section-head">
+        <h2>文本示例：<span>中性示范</span>而非成品模板</h2>
+        <p>以下示例仅用于说明句长、停顿和韵脚的组织方式，不含粗俗用语。实际创作时请自行把握用词尺度。</p>
+      </div>
+      <div class="lyric-block">
+        <article class="lyric-item">
+          <h3>示例一 · 开场铺垫型</h3>
+          <pre>风从街口吹过来
+脚步没停也没歪
+一句话我摆上台
+今天这段自己开</pre>
+          <p class="note">四句，每句七字，尾字押“ai”韵。节奏平稳，适合作为整段的引入部分。</p>
+        </article>
+        <article class="lyric-item">
+          <h3>示例二 · 主歌循环型</h3>
+          <pre>灯光打在旧墙面
+鼓点敲在正中间
+不绕弯也不铺垫
+一句一句往前撵</pre>
+          <p class="note">四句，每句七字，尾字押“an”韵。句长整齐，便于循环重复。</p>
+        </article>
+        <article class="lyric-item">
+          <h3>示例三 · 情绪推进型</h3>
+          <pre>别说我调子太高
+别说我步子太跳
+节奏到了这一秒
+声音自然往上冒</pre>
+          <p class="note">四句，每句七字，尾字押“ao”韵。语气偏强，适合放在循环之后推情绪。</p>
+        </article>
+        <article class="lyric-item">
+          <h3>示例四 · 收尾落点型</h3>
+          <pre>话到此处先打住
+鼓点落定这一段
+下次开口再继续
+今天先到这就算</pre>
+          <p class="note">四句，字数略有变化，用于收束整段。最后一句可重复一次增强结束感。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 节奏对照 -->
+  <section class="section section-alt" id="rhythm">
+    <div class="container">
+      <div class="section-head">
+        <h2>节奏对照：<span>字数与拍点</span>怎么配合</h2>
+        <p>喊麦词好不好念，很大程度上取决于字数是否踩在拍上。下表给出常见的对应关系，供参考。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>位置</th>
+              <th>常见字数</th>
+              <th>语速感觉</th>
+              <th>换气位置</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>开场句</strong></td>
+              <td>5–7 字</td>
+              <td>中速，咬字清楚</td>
+              <td>句尾短停</td>
+            </tr>
+            <tr>
+              <td><strong>主歌句</strong></td>
+              <td>7–9 字</td>
+              <td>稳定，跟鼓点走</td>
+              <td>每两句换一次气</td>
+            </tr>
+            <tr>
+              <td><strong>情绪句</strong></td>
+              <td>9–12 字</td>
+              <td>偏快，重音密集</td>
+              <td>半句处可偷气</td>
+            </tr>
+            <tr>
+              <td><strong>衔接半句</strong></td>
+              <td>3–4 字</td>
+              <td>短促，起过渡作用</td>
+              <td>不换气，直接接下一句</td>
+            </tr>
+            <tr>
+              <td><strong>收尾句</strong></td>
+              <td>7–8 字</td>
+              <td>放慢，收住力度</td>
+              <td>句尾留白</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作建议 -->
+  <section class="section" id="tips">
+    <div class="container">
+      <div class="section-head">
+        <h2>创作建议：<span>写得顺</span>比写得狠更重要</h2>
+        <p>以下几条是从实际使用角度出发的经验性提示，不涉及具体作品评价。</p>
+      </div>
+      <div class="tips-grid">
+        <div class="tip">
+          <div class="tip-num">1</div>
+          <div>
+            <h3>先定节奏，再填词</h3>
+            <p>找一段稳定的伴奏，先用手打拍子，确定每句占几拍，再往里填字。反过来先写词再找节奏，往往很难对齐。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <div class="tip-num">2</div>
+          <div>
+            <h3>句长尽量统一</h3>
+            <p>同一段内每句字数接近，念起来才顺。偶尔出现一两个字的差异可以接受，但不要频繁变化，否则节奏会散。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <div class="tip-num">3</div>
+          <div>
+            <h3>押韵服从表达</h3>
+            <p>韵脚是为节奏服务的，如果为了押韵导致句子意思别扭，宁可换韵或调整语序，也不要硬凑。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <div class="tip-num">4</div>
+          <div>
+            <h3>控制用词尺度</h3>
+            <p>直白不等于粗俗。用强势的语气、夸张的比喻同样能表达情绪，而过度使用粗口容易影响传播和平台审核。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <div class="tip-num">5</div>
+          <div>
+            <h3>注意平台规范</h3>
+            <p>不同平台对语言内容的审核标准不同，发布前应了解所在平台的具体要求，避免因用词问题导致内容被限制。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <div class="tip-num">6</div>
+          <div>
+            <h3>尊重他人与公序良俗</h3>
+            <p>不针对具体个人、群体进行攻击性表达，不传播歧视性内容。这是创作的基本底线，也是长期创作的前提。</p>
+          </div>
+        </div>
+      </div>
+      <div class="notice" style="margin-top:26px;">
+        <b>提示：</b>喊麦文本的创作与使用应当遵守国家法律法规和各平台的内容规范。本页内容仅从文本结构与节奏角度进行说明，不鼓励、不提供带有侮辱、攻击或违法性质的表达。
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>关于粗口喊麦词，读者问得比较多的几个问题。</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            粗口喊麦词和普通喊麦词有什么区别？
+            <span class="arrow">+</span>
+          </button>
+          <div class="faq-a">
+            <p>主要区别在语气和用词倾向。普通喊麦词可以是叙事、抒情或励志风格；带有“粗口”倾向的文本通常语气更冲、用词更直白，情绪宣泄感更强。两者在结构上没有本质差别，都讲究句长整齐和节奏配合。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            写喊麦词一定要押韵吗？
+            <span class="arrow">+</span>
+          </button>
+          <div class="faq-a">
+            <p>押韵不是硬性要求，但有助于增强节奏感和记忆点。大多数喊麦文本会在一段内保持相对统一的韵脚。如果完全不押韵，就需要靠句长和重音来维持节奏，难度会更高一些。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            一段喊麦词一般写多长比较合适？
+            <span class="arrow">+</span>
+          </button>
+          <div class="faq-a">
+            <p>没有固定标准，取决于伴奏长度和使用场景。常见的做法是以四句或八句为一组进行循环，整段控制在若干组之内。初次尝试可以先写四句一组，念顺了再扩展。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            用词太冲会不会影响发布？
+            <span class="arrow">+</span>
+          </button>
+          <div class="faq-a">
+            <p>有可能。各平台对语言内容的审核标准不同，含有明显侮辱、攻击或低俗用语的文本可能无法通过审核，也可能影响账号状态。建议在表达情绪时优先选择强势但不越界的说法。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            没有音乐基础能写喊麦词吗？
+            <span class="arrow">+</span>
+          </button>
+          <div class="faq-a">
+            <p>可以。喊麦对乐理的要求相对较低，更重要的是节奏感和语言组织能力。可以从模仿节奏开始，用简单的伴奏练习断句和换气，逐步找到适合自己的写法。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>喊麦词库</h4>
+        <p>一个围绕喊麦文本结构、节奏配合与创作规范进行整理的资料页面，内容以说明性文字为主，供学习和参考使用。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#concept">概念入门</a></li>
+          <li><a href="#structure">结构拆解</a></li>
+          <li><a href="#lyric">文本示例</a></li>
+          <li><a href="#rhythm">节奏对照</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>创作提醒</h4>
+        <ul>
+          <li>遵守平台内容规范</li>
+          <li>尊重他人与公序良俗</li>
+          <li>用词尺度自行把握</li>
+          <li>本页不提供成品歌词下载</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2024 喊麦词库 · 内容仅供创作参考
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var items = document.querySelectorAll('.faq-item');
+  for (var i = 0; i < items.length; i++) {
+    (function (item) {
+      var btn = item.querySelector('.faq-q');
+      btn.addEventListener('click', function () {
+        item.classList.toggle('open');
+      });
+    })(items[i]);
+  }
+
+  var navLinks = document.querySelectorAll('.main-nav a');
+  for (var j = 0; j < navLinks.length; j++) {
+    navLinks[j].addEventListener('click', function () {
+      for (var k = 0; k < navLinks.length; k++) {
+        navLinks[k].classList.remove('active');
+      }
+      this.classList.add('active');
+    });
+  }
+})();
+</script>
+
+</body>
+  </html>
