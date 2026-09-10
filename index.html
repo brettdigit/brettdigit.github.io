@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>无尽动漫-海量动漫资源在线观看与追番指南</title>
+<meta name="description" content="无尽动漫为你整理海量动漫资源，涵盖新番连载、经典旧番、剧场版与国漫，提供分类浏览、追番指南、选番建议与常见问题解答，帮助动漫爱好者高效找到想看的作品。">
+<meta name="keywords" content="无尽动漫,动漫在线观看,新番连载,经典动漫,国漫,剧场版,追番指南">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#141b2e;
+  --ink-soft:#4a5670;
+  --line:#e3e7f0;
+  --bg:#f6f8fc;
+  --white:#ffffff;
+  --brand:#5b4bff;
+  --brand-2:#ff5c8a;
+  --brand-soft:#ecebff;
+  --sun:#ffb020;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(20,27,46,.08);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ============ 顶部 ============ */
+.topbar{
+  background:linear-gradient(120deg,#1b1436 0%,#2c1f5e 45%,#4a2a7a 100%);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.topbar::after{
+  content:"";
+  position:absolute;
+  right:-120px;top:-120px;
+  width:420px;height:420px;
+  background:radial-gradient(circle,rgba(255,92,138,.45),transparent 65%);
+  pointer-events:none;
+}
+.site-head{position:relative;z-index:2}
+.head-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:18px 0 14px;
+}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{
+  width:44px;height:44px;border-radius:13px;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  display:grid;place-items:center;
+  font-weight:800;font-size:19px;color:#fff;
+  box-shadow:0 6px 18px rgba(91,75,255,.45);
+}
+.logo-text b{display:block;font-size:20px;letter-spacing:.5px}
+.logo-text span{display:block;font-size:12px;color:#c3bce6;letter-spacing:1.5px}
+.head-search{
+  flex:1;max-width:380px;
+  display:flex;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:999px;overflow:hidden;
+}
+.head-search input{
+  flex:1;border:0;background:transparent;outline:none;
+  padding:10px 18px;color:#fff;font-size:14px;
+}
+.head-search input::placeholder{color:#b9b2dd}
+.head-search button{
+  border:0;cursor:pointer;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  color:#fff;padding:0 22px;font-size:14px;font-weight:600;
+}
+.main-nav{
+  display:flex;gap:6px;flex-wrap:wrap;
+  padding:0 0 14px;position:relative;z-index:2;
+}
+.main-nav a{
+  font-size:14px;color:#ddd8f5;
+  padding:7px 16px;border-radius:999px;
+  transition:.2s;
+}
+.main-nav a:hover,.main-nav a.on{
+  background:rgba(255,255,255,.16);color:#fff;
+}
+
+/* ============ 首屏 ============ */
+.hero{padding:34px 0 46px;position:relative;z-index:2}
+.hero-grid{
+  display:grid;grid-template-columns:1.35fr 1fr;gap:30px;align-items:center;
+}
+.hero h1{
+  font-size:38px;line-height:1.3;letter-spacing:.5px;
+  margin-bottom:16px;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,#ffd166,#ff5c8a);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p{color:#cfc9ec;font-size:15.5px;max-width:560px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hero-tags span{
+  font-size:13px;padding:6px 14px;border-radius:999px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+  color:#e6e2fb;
+}
+.hero-actions{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+.btn{
+  display:inline-block;font-size:14.5px;font-weight:600;
+  padding:12px 26px;border-radius:999px;transition:.22s;
+}
+.btn-main{background:linear-gradient(135deg,#ff5c8a,#ff8a4c);color:#fff;box-shadow:0 8px 22px rgba(255,92,138,.4)}
+.btn-main:hover{transform:translateY(-2px)}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+.hero-panel{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:20px;padding:22px;
+  backdrop-filter:blur(6px);
+}
+.hero-panel h2{font-size:15px;color:#fff;margin-bottom:14px;letter-spacing:1px}
+.rank-list{list-style:none;display:flex;flex-direction:column;gap:11px}
+.rank-list li{display:flex;gap:12px;align-items:flex-start;font-size:13.5px;color:#ded9f6}
+.rank-num{
+  flex:none;width:22px;height:22px;border-radius:7px;
+  background:rgba(255,255,255,.16);
+  display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;
+}
+.rank-list li:nth-child(1) .rank-num{background:linear-gradient(135deg,#ffb020,#ff7a45)}
+.rank-list li:nth-child(2) .rank-num{background:linear-gradient(135deg,#8f7bff,#5b4bff)}
+.rank-list li:nth-child(3) .rank-num{background:linear-gradient(135deg,#ff5c8a,#c93bff)}
+.rank-list b{color:#fff;font-weight:600}
+
+/* ============ 通用区块 ============ */
+.section{padding:52px 0}
+.sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:18px;margin-bottom:26px;flex-wrap:wrap;
+}
+.sec-head h2{
+  font-size:24px;letter-spacing:.5px;position:relative;padding-left:16px;
+}
+.sec-head h2::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;
+  border-radius:4px;background:linear-gradient(180deg,var(--brand),var(--brand-2));
+}
+.sec-head p{font-size:14px;color:var(--ink-soft);max-width:620px}
+.sec-head .more{font-size:13.5px;color:var(--brand);font-weight:600}
+
+/* ============ 分类 ============ */
+.cat-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:16px;
+}
+.cat-card{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:14px;padding:20px 18px;
+  transition:.22s;
+}
+.cat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#d6d2ff}
+.cat-card .ico{
+  width:38px;height:38px;border-radius:11px;margin-bottom:12px;
+  display:grid;place-items:center;font-size:17px;color:#fff;
+}
+.cat-card h3{font-size:15.5px;margin-bottom:6px}
+.cat-card p{font-size:13px;color:var(--ink-soft);line-height:1.6}
+.c1 .ico{background:linear-gradient(135deg,#5b4bff,#8f7bff)}
+.c2 .ico{background:linear-gradient(135deg,#ff5c8a,#ff9a6b)}
+.c3 .ico{background:linear-gradient(135deg,#00b8a9,#3ad6a0)}
+.c4 .ico{background:linear-gradient(135deg,#ffb020,#ff7a45)}
+.c5 .ico{background:linear-gradient(135deg,#7a5cff,#c93bff)}
+.c6 .ico{background:linear-gradient(135deg,#2f80ed,#56ccf2)}
+.c7 .ico{background:linear-gradient(135deg,#eb5757,#f2994a)}
+.c8 .ico{background:linear-gradient(135deg,#11998e,#38ef7d)}
+
+/* ============ 推荐卡片 ============ */
+.card-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;
+}
+.anime-card{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;transition:.24s;
+  display:flex;flex-direction:column;
+}
+.anime-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.thumb{
+  height:132px;position:relative;
+  display:grid;place-items:center;color:#fff;
+  font-size:15px;font-weight:700;letter-spacing:2px;
+}
+.thumb .badge{
+  position:absolute;left:12px;top:12px;
+  font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:999px;
+  background:rgba(0,0,0,.35);letter-spacing:0;
+}
+.thumb .score{
+  position:absolute;right:12px;bottom:12px;
+  font-size:12.5px;font-weight:700;color:#ffd166;letter-spacing:0;
+}
+.t1{background:linear-gradient(135deg,#5b4bff,#a06bff)}
+.t2{background:linear-gradient(135deg,#ff5c8a,#ff9a6b)}
+.t3{background:linear-gradient(135deg,#0f9b8e,#3ad6a0)}
+.t4{background:linear-gradient(135deg,#2f80ed,#56ccf2)}
+.t5{background:linear-gradient(135deg,#f2994a,#eb5757)}
+.t6{background:linear-gradient(135deg,#7a5cff,#c93bff)}
+.anime-body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column}
+.anime-body h3{font-size:16.5px;margin-bottom:8px}
+.anime-body p{font-size:13.5px;color:var(--ink-soft);flex:1}
+.meta{
+  display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;
+  font-size:12px;color:#7a849b;
+}
+.meta span{background:var(--brand-soft);color:#4b3fd6;padding:3px 10px;border-radius:999px}
+
+/* ============ 更新列表 ============ */
+.update-box{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;
+}
+.update-row{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;
+  gap:12px;padding:15px 22px;font-size:14px;
+  border-bottom:1px solid var(--line);align-items:center;
+}
+.update-row:last-child{border-bottom:0}
+.update-row.head{
+  background:#f1f3fa;font-size:13px;font-weight:700;color:#5c6580;
+}
+.update-row .name{font-weight:600}
+.update-row .name i{
+  font-style:normal;font-size:11.5px;font-weight:600;
+  background:linear-gradient(135deg,#ff5c8a,#ff8a4c);color:#fff;
+  padding:2px 8px;border-radius:999px;margin-right:8px;
+}
+.update-row .ep{color:var(--brand);font-weight:600}
+.update-row .time{color:#8b93a8;font-size:13px}
+
+/* ============ 指南 ============ */
+.guide-wrap{
+  display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:start;
+}
+.guide-main{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.guide-main h2{font-size:22px;margin-bottom:14px}
+.guide-main p{font-size:15px;color:#3c455c;margin-bottom:14px}
+.guide-main h3{font-size:16.5px;margin:24px 0 10px;color:var(--ink)}
+.guide-main ul{margin:0 0 10px 20px}
+.guide-main li{font-size:14.5px;color:#3c455c;margin-bottom:8px}
+.guide-side{display:flex;flex-direction:column;gap:18px}
+.side-card{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);padding:22px;
+}
+.side-card h3{font-size:16px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px dashed var(--line)}
+.side-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.side-list li{font-size:13.5px;color:#3c455c;display:flex;gap:10px}
+.side-list li b{color:var(--brand);font-weight:700;flex:none}
+.tip{font-size:13px;color:#7a849b;margin-top:12px;line-height:1.7}
+
+/* ============ FAQ ============ */
+.faq{display:flex;flex-direction:column;gap:14px}
+.faq details{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:14px;padding:18px 22px;transition:.2s;
+}
+.faq details[open]{border-color:#d6d2ff;box-shadow:0 6px 20px rgba(91,75,255,.08)}
+.faq summary{
+  cursor:pointer;font-size:15.5px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";font-size:20px;color:var(--brand);font-weight:400;flex:none;
+  transition:.2s;
+}
+.faq details[open] summary::after{content:"–"}
+.faq p{font-size:14.5px;color:var(--ink-soft);margin-top:12px;line-height:1.8}
+
+/* ============ 页脚 ============ */
+.site-foot{
+  background:#161a2b;color:#9aa2bb;margin-top:20px;
+}
+.foot-grid{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;
+  padding:46px 0 30px;
+}
+.foot-brand b{color:#fff;font-size:18px;display:block;margin-bottom:10px}
+.foot-brand p{font-size:13.5px;line-height:1.8;max-width:320px}
+.foot-col h4{color:#fff;font-size:14.5px;margin-bottom:14px}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.foot-col a{font-size:13.5px;color:#9aa2bb;transition:.2s}
+.foot-col a:hover{color:#fff}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.08);
+  padding:18px 0;font-size:12.5px;color:#767e96;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* ============ 响应式 ============ */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero h1{font-size:30px}
+  .guide-wrap{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media (max-width:720px){
+  .head-inner{flex-wrap:wrap}
+  .head-search{max-width:none;order:3;width:100%}
+  .hero h1{font-size:26px}
+  .section{padding:38px 0}
+  .sec-head h2{font-size:20px}
+  .update-row{grid-template-columns:1.4fr 1fr;font-size:13px;padding:13px 16px}
+  .update-row .time{display:none}
+  .update-row.head .time{display:none}
+  .guide-main{padding:22px}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media (max-width:460px){
+  .hero h1{font-size:23px}
+  .card-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap site-head">
+    <div class="head-inner">
+      <a class="logo" href="#top">
+        <span class="logo-mark">无</span>
+        <span class="logo-text">
+          <b>无尽动漫</b>
+          <span>ANIME UNLIMITED</span>
+        </span>
+      </a>
+      <form class="head-search" onsubmit="return false;">
+        <input type="search" placeholder="搜索番剧名称、类型或年份" aria-label="搜索动漫">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#top" class="on">首页</a>
+      <a href="#category">番剧分类</a>
+      <a href="#recommend">编辑推荐</a>
+      <a href="#update">更新速览</a>
+      <a href="#guide">追番指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+
+  <div class="wrap hero" id="top">
+    <div class="hero-grid">
+      <div>
+        <h1>无尽动漫：把想看的番，<em>一次找齐</em></h1>
+        <p>新番连载、经典旧番、剧场版、国漫与泡面番，按题材、年份、篇幅分类整理。无论你是想追当季新作，还是想补一部口碑老番，都能在这里快速定位，少走弯路。</p>
+        <div class="hero-tags">
+          <span>当季新番</span>
+          <span>完结补番</span>
+          <span>剧场版</span>
+          <span>国漫专区</span>
+          <span>治愈日常</span>
+          <span>热血战斗</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#recommend">看看编辑推荐</a>
+          <a class="btn btn-ghost" href="#guide">追番入门指南</a>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <h2>本周关注方向</h2>
+        <ul class="rank-list">
+          <li><span class="rank-num">1</span><span><b>当季新番</b>：更新节奏与集数安排，适合边播边追。</span></li>
+          <li><span class="rank-num">2</span><span><b>高口碑完结番</b>：一次性看完，不用担心等更。</span></li>
+          <li><span class="rank-num">3</span><span><b>短篇幅泡面番</b>：单集时间短，适合碎片时间。</span></li>
+          <li><span class="rank-num">4</span><span><b>国漫与剧场版</b>：题材贴近本土，适合家庭一起看。</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 分类 -->
+  <section class="section" id="category">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>按口味找番，比盲目刷列表更快</h2>
+          <p>动漫作品数量庞大，先确定题材方向，再筛选年份和篇幅，能大幅减少翻找时间。以下分类覆盖大多数观众的常见需求。</p>
+        </div>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-card c1">
+          <div class="ico">热</div>
+          <h3>热血战斗</h3>
+          <p>成长、对决与团队协作，节奏紧凑，适合喜欢强情节推进的观众。</p>
+        </article>
+        <article class="cat-card c2">
+          <div class="ico">恋</div>
+          <h3>恋爱青春</h3>
+          <p>校园、暗恋与日常心动，情绪细腻，适合放松时慢慢看。</p>
+        </article>
+        <article class="cat-card c3">
+          <div class="ico">愈</div>
+          <h3>治愈日常</h3>
+          <p>生活流叙事，节奏舒缓，适合下班后或睡前观看。</p>
+        </article>
+        <article class="cat-card c4">
+          <div class="ico">幻</div>
+          <h3>奇幻异世界</h3>
+          <p>世界观设定丰富，冒险与成长线并行，适合喜欢沉浸感的观众。</p>
+        </article>
+        <article class="cat-card c5">
+          <div class="ico">悬</div>
+          <h3>悬疑推理</h3>
+          <p>线索密集、反转较多，建议连续观看以免遗漏细节。</p>
+        </article>
+        <article class="cat-card c6">
+          <div class="ico">科</div>
+          <h3>科幻机甲</h3>
+          <p>设定硬核，关注科技与人性议题，适合喜欢思辨的观众。</p>
+        </article>
+        <article class="cat-card c7">
+          <div class="ico">喜</div>
+          <h3>搞笑吐槽</h3>
+          <p>单集独立性强，随时点开都能看，适合碎片时间。</p>
+        </article>
+        <article class="cat-card c8">
+          <div class="ico">国</div>
+          <h3>国漫专区</h3>
+          <p>本土题材与东方美学，涵盖武侠、神话与都市故事。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 推荐 -->
+  <section class="section" id="recommend">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>编辑推荐：不同观看场景的选番思路</h2>
+          <p>以下不是排行榜，而是按观看习惯给出的方向参考。选番没有唯一标准，适合自己的节奏最重要。</p>
+        </div>
+        <a class="more" href="#update">查看更新速览 →</a>
+      </div>
+      <div class="card-grid">
+        <article class="anime-card">
+          <div class="thumb t1">新番连载<span class="badge">当季</span><span class="score">边播边追</span></div>
+          <div class="anime-body">
+            <h3>想跟上讨论节奏</h3>
+            <p>选择当季正在更新的作品，每周固定更新一集，能和其他观众同步讨论剧情走向，不容易被剧透。</p>
+            <div class="meta"><span>每周更新</span><span>适合社交</span></div>
+          </div>
+        </article>
+        <article class="anime-card">
+          <div class="thumb t2">完结补番<span class="badge">一口气</span><span class="score">无需等更</span></div>
+          <div class="anime-body">
+            <h3>想一次性看完</h3>
+            <p>已经完结的作品可以自由安排观看进度，剧情连贯性更强，适合周末集中补完。</p>
+            <div class="meta"><span>已完结</span><span>连贯体验</span></div>
+          </div>
+        </article>
+        <article class="anime-card">
+          <div class="thumb t3">短篇泡面<span class="badge">碎片时间</span><span class="score">单集短</span></div>
+          <div class="anime-body">
+            <h3>时间零散也能看</h3>
+            <p>单集时长较短的作品，通勤、午休都能看一集，压力小，也不容易因为中断而忘记剧情。</p>
+            <div class="meta"><span>单集短</span><span>轻松</span></div>
+          </div>
+        </article>
+        <article class="anime-card">
+          <div class="thumb t4">剧场版<span class="badge">独立故事</span><span class="score">画面佳</span></div>
+          <div class="anime-body">
+            <h3>想一次看完一个完整故事</h3>
+            <p>剧场版通常篇幅集中、制作规格较高，即使没看过系列前作，多数也能独立理解主线。</p>
+            <div class="meta"><span>单部完结</span><span>制作精良</span></div>
+          </div>
+        </article>
+        <article class="anime-card">
+          <div class="thumb t5">经典旧番<span class="badge">口碑</span><span class="score">经得起重看</span></div>
+          <div class="anime-body">
+            <h3>想看点被反复提起的</h3>
+            <p>播出多年仍被讨论的作品，通常在叙事或人物塑造上有独到之处，适合想认真看一部好故事的观众。</p>
+            <div class="meta"><span>经典</span><span>值得重看</span></div>
+          </div>
+        </article>
+        <article class="anime-card">
+          <div class="thumb t6">国漫专区<span class="badge">本土</span><span class="score">题材多样</span></div>
+          <div class="anime-body">
+            <h3>想支持本土创作</h3>
+            <p>国漫在武侠、神话、都市等题材上积累了不少作品，语言和语境更贴近日常，适合入门观看。</p>
+            <div class="meta"><span>国漫</span><span>题材广</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 更新速览 -->
+  <section class="section" id="update">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>更新速览：按更新方式安排观看计划</h2>
+          <p>不同作品的更新节奏差异较大，了解更新方式有助于安排时间。下表为常见更新类型的说明示例。</p>
+        </div>
+      </div>
+      <div class="update-box">
+        <div class="update-row head">
+          <span>作品类型</span><span>更新方式</span><span>集数规模</span><span>观看建议</span>
+        </div>
+        <div class="update-row">
+          <span class="name"><i>周更</i>当季新番</span>
+          <span class="ep">每周固定一集</span>
+          <span>通常 12 集左右</span>
+          <span class="time">适合同步追更</span>
+        </div>
+        <div class="update-row">
+          <span class="name"><i>长番</i>长篇连载</span>
+          <span class="ep">持续更新</span>
+          <span>集数较多</span>
+          <span class="time">可分段补看</span>
+        </div>
+        <div class="update-row">
+          <span class="name"><i>完结</i>完结作品</span>
+          <span class="ep">已全部放出</span>
+          <span>视作品而定</span>
+          <span class="time">可自由安排</span>
+        </div>
+        <div class="update-row">
+          <span class="name"><i>剧场</i>剧场版</span>
+          <span class="ep">单部完结</span>
+          <span>单部作品</span>
+          <span class="time">一次看完</span>
+        </div>
+        <div class="update-row">
+          <span class="name"><i>短篇</i>泡面番</span>
+          <span class="ep">单集较短</span>
+          <span>常见 12 集左右</span>
+          <span class="time">碎片时间观看</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 指南 -->
+  <section class="section" id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>追番指南：怎么选、怎么看、怎么不弃番</h2>
+          <p>很多观众的问题不是找不到番，而是选择太多反而不知道从哪开始。下面从选番、观看节奏和记录方式三个角度给出建议。</p>
+        </div>
+      </div>
+      <div class="guide-wrap">
+        <article class="guide-main">
+          <h2>先明确三件事，再开始找番</h2>
+          <p>面对庞大的动漫资源，最有效的方式不是逐个点开试看，而是先确认自己的需求：想投入多少时间、偏好什么情绪、是否需要和别人同步讨论。这三个问题的答案，基本能框定选番范围。</p>
+
+          <h3>一、按可投入的时间筛选</h3>
+          <ul>
+            <li>时间零散：优先选择单集较短的短篇作品，观看压力小。</li>
+            <li>周末集中：可以选择已完结的中短篇，连续看完体验更完整。</li>
+            <li>长期陪伴：长篇连载作品适合慢慢看，但需要接受较长的追更周期。</li>
+          </ul>
+
+          <h3>二、按想要的观感筛选</h3>
+          <ul>
+            <li>想放松：治愈日常、搞笑吐槽类节奏平缓，情绪负担低。</li>
+            <li>想被带动情绪：热血战斗、竞技成长类通常有明确的目标与推进感。</li>
+            <li>想动脑：悬疑推理、科幻设定类信息密度较高，适合专注观看。</li>
+          </ul>
+
+          <h3>三、用前几集判断是否继续</h3>
+          <p>一部作品是否适合自己，通常在前几集就能看出大致方向。可以关注三点：叙事节奏是否舒服、人物行为是否可信、整体氛围是否让你想继续点下一集。如果连续几集都没有代入感，及时换一部比硬撑更划算。</p>
+
+          <h3>四、记录进度，避免半途弃番</h3>
+          <p>同时追多部作品时，容易忘记看到第几集。建议用简单的方式记录：在备忘录里写下作品名和当前集数，或者按“正在追 / 待补 / 已看完”分组。这样下次打开时不需要重新回忆剧情，能显著减少弃番概率。</p>
+
+          <h3>五、注意观看节奏与用眼健康</h3>
+          <p>连续观看时间过长容易疲劳，也会降低对剧情的感受力。可以每看完一到两集起身活动几分钟，调整屏幕亮度与观看距离。追番是长期的事，保持舒适的状态比一次看很多更重要。</p>
+        </article>
+
+        <aside class="guide-side">
+          <div class="side-card">
+            <h3>选番自查清单</h3>
+            <ul class="side-list">
+              <li><b>1</b><span>我这次有多少空闲时间？</span></li>
+              <li><b>2</b><span>我想要轻松还是强情节？</span></li>
+              <li><b>3</b><span>是否需要和别人同步讨论？</span></li>
+              <li><b>4</b><span>能否接受较长的追更周期？</span></li>
+              <li><b>5</b><span>有没有想避开的题材或内容？</span></li>
+            </ul>
+            <p class="tip">把这几个问题想清楚，通常几分钟内就能缩小到两三部候选作品。</p>
+          </div>
+          <div class="side-card">
+            <h3>观看小提示</h3>
+            <ul class="side-list">
+              <li><b>·</b><span>先看简介和标签，再决定是否试看。</span></li>
+              <li><b>·</b><span>避开剧透讨论区，保留首次观看体验。</span></li>
+              <li><b>·</b><span>同一时间追的作品不宜过多，容易混淆剧情。</span></li>
+              <li><b>·</b><span>遇到不喜欢的作品，及时止损也是效率。</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>常见问题</h2>
+          <p>关于找番、追番和观看安排，观众问得比较多的几个问题，整理如下。</p>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>第一次接触动漫，从哪里开始比较好？</summary>
+          <p>建议从题材明确、篇幅适中的作品入手。先确定自己喜欢的类型，比如日常、冒险或悬疑，再选择集数不多、故事相对完整的作品。这样既能快速判断自己的偏好，也不会因为篇幅太长而中途放弃。</p>
+        </details>
+        <details>
+          <summary>新番和完结番应该先看哪个？</summary>
+          <p>如果你希望参与当季讨论，可以优先追新番；如果更在意观看体验的连贯性，完结番更合适。两者并不冲突，很多人会同时追一部新番、补一部完结番，前者用于同步交流，后者用于沉浸观看。</p>
+        </details>
+        <details>
+          <summary>怎样避免被剧透？</summary>
+          <p>关键剧情讨论通常集中在社交平台和评论区。观看期间可以暂时减少相关话题的浏览，或者先看完当前进度再参与讨论。另外，搜索作品信息时尽量只看简介和基础标签，避免点开剧情解析类内容。</p>
+        </details>
+        <details>
+          <summary>同时追多部作品，怎么记住看到哪了？</summary>
+          <p>可以用最简单的记录方式：在手机备忘录里按作品名列出当前集数，每看完一集就更新一次。也可以按“正在追”“待补”“已看完”分组管理。记录本身不复杂，但能有效减少重复观看和剧情混淆。</p>
+        </details>
+        <details>
+          <summary>看不下去一部作品，应该坚持吗？</summary>
+          <p>观看动漫本质上是休闲活动，如果连续几集都无法投入，换一部通常是更合理的选择。不过也可以先确认原因：是题材不合口味，还是节奏暂时偏慢。部分作品前期铺垫较长，后续才逐渐展开，可以根据自己的耐心程度决定是否再给几集机会。</p>
+        </details>
+        <details>
+          <summary>剧场版需要先看系列前作吗？</summary>
+          <p>多数剧场版会尽量照顾新观众，主线相对独立，但涉及人物关系和世界观设定时，看过前作会更容易理解细节。如果时间有限，可以先看剧场版，再决定是否补完整个系列。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <b>无尽动漫</b>
+        <p>一个面向动漫爱好者的内容整理与观看指引页面，帮助你在海量作品中更快找到适合自己的那一部。</p>
+      </div>
+      <div class="foot-col">
+        <h4>内容分类</h4>
+        <ul>
+          <li><a href="#category">热血战斗</a></li>
+          <li><a href="#category">恋爱青春</a></li>
+          <li><a href="#category">治愈日常</a></li>
+          <li><a href="#category">悬疑推理</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>观看参考</h4>
+        <ul>
+          <li><a href="#recommend">编辑推荐</a></li>
+          <li><a href="#update">更新速览</a></li>
+          <li><a href="#guide">追番指南</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="#top">页面说明</a></li>
+          <li><a href="#guide">选番建议</a></li>
+          <li><a href="#faq">观看提示</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>无尽动漫 · 动漫内容整理与观看指引</span>
+      <span>页面内容仅供观看参考，请合理安排观看时间</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var navLinks = document.querySelectorAll('.main-nav a');
+  navLinks.forEach(function(link){
+    link.addEventListener('click', function(){
+      navLinks.forEach(function(l){ l.classList.remove('on'); });
+      this.classList.add('on');
+    });
+  });
+
+  var searchForm = document.querySelector('.head-search');
+  if(searchForm){
+    searchForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var input = this.querySelector('input');
+      if(input && !input.value.trim()){
+        input.focus();
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+  </html>
